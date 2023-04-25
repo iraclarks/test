@@ -43,9 +43,9 @@ jobs:
         git add ./
         echo "----------------------------------2----------------------------------------------"
         git status
+        git restore --staged README.md
         git restore README.md
         git checkout -- README.md
-        git restore --staged README.md
         echo "----------------------------------3----------------------------------------------"
         git status
         git commit -m "init laravel 10.*"
